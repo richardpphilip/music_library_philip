@@ -6,3 +6,4 @@ class Song(models.Model):
     artist = models.CharField(max_length=50, default=None)
     album = models.CharField(max_length=50, default=None)
     release_date = models.DateField(null=True, blank=False)
+    like = models.IntegerField(default=0, null=True)
